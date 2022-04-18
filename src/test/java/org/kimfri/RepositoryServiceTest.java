@@ -46,4 +46,17 @@ class RepositoryServiceTest {
         final String actual = repositoryService.getLongestString();
         assertThat(actual).isEqualTo(expected);
     }
+
+    @Test
+    void kalle() {
+        assertThat("This is a String")
+                .isNotNull()
+                .startsWith("This")
+                .hasSize(16);
+        final List<String> stringList = Arrays.asList("apa");
+        assertThat(stringList).isNotNull();
+        assertThat(stringList.size())
+                .isNotNull()
+                .isOne();
+    }
 }
